@@ -1,0 +1,4 @@
+// rename this to tojen.js and change the API KEY to the api key
+'use strict';
+
+module.exports = 'API_KEY';
