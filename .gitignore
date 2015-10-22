@@ -33,7 +33,8 @@ node_modules
 token.js
 
 #do not commit database data
-/db
+*.db
+
 
 #do not commit editor config files
 .idea
