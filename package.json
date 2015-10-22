@@ -2,27 +2,55 @@
   "name": "ccn-slackbot-hackaton",
   "version": "0.0.0",
   "description": "Slackbot for Hackaton (and maybe other things)",
-  "main": "lib/teambot.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "Slack",
+    "bot",
+    "slackbot",
+    "collegecryptonetwork",
+    "ccn"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/vogelito/ccn-slackbot-hackaton.git"
   },
-  "keywords": [
-    "slackbot",
-    "collegecryptonetwork",
-    "cnn"
-  ],
-  "author": "Daniel Vogel",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vogelito/ccn-slackbot-hackaton/issues"
+  },
+  "main": "lib/teambot.js",
+  "bin": {
+    "teambot": "bin/bot.js"
+  },
+  "scripts": {
+    "start": "node bin/bot.js",
+    "test": "node_modules/.bin/xo bin/bot.js lib/teambot.js"
+  },
+  "author": {
+    "name": "Daniel Vogel",
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
   },
   "homepage": "https://github.com/vogelito/ccn-slackbot-hackaton",
   "dependencies": {
     "slackbots": "^0.4.0",
     "sqlite3": "^3.1.0"
+    "async": "^1.4.1",
+    "progress": "^1.1.8",
+    "request": "^2.60.0",
+  },
+  "devDependencies": {
+    "xo": "^0.5.2"
+  },
+  "xo": {
+    "space": 4,
+    "rules": {
+      "camelcase": [
+        2,
+        {
+          "properties": "never"
+        }
+      ]
+    }
   }
 }
